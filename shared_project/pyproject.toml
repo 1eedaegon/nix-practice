@@ -1,0 +1,10 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shared_project"
+version = "0.0.1"
+
+[project.scripts]
+app = "app:main"
