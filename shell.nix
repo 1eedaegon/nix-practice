@@ -3,7 +3,7 @@ let
   pkgs = import nixpkgs { config = {}; overlays = []; };
 in
   pkgs.mkShell {
-    packages = with pkgs; [git neovim nodejs];
+    packages = with pkgs; [git neovim nodejs cowsay];
     GIT_EDITOR = "${pkgs.neovim}/bin/nvim";
     shellHook = ''
       git status
